@@ -35,7 +35,7 @@ def move(board, index, token = "X")
     move(board, index, token)
     display_board(board)
    else
-    puts 'try again'
+    puts "Try again"
     turn(board)
   end
   display_board(board)
