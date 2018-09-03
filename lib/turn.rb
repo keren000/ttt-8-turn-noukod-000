@@ -20,15 +20,15 @@ def move(board, index, token = "X")
   board[index] = token
   return(board)
  end
- 
+
  def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
-  
+
   #input to index
   index = input_to_index(user_input)
   token = current_player(board)
-  
+
    #check for validation
   if valid_move?(board,index)
     puts "valid move"
@@ -49,10 +49,10 @@ end
 return current_player
 end
  def turn_count(board)
-  counter = 0
+  turncounter = 0
   board.each do |space|
     if space == "X" || space == "O"
-      counter +=1
+      turncounter +=1
   end
 end
 return counter
