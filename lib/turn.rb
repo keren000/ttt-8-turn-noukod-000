@@ -40,6 +40,7 @@ def move(board, index, token = "X")
   end
   display_board(board)
 end
+
  def current_player(board)
   if turn_count(board)%2 ==0
     current_player = "X"
@@ -50,8 +51,8 @@ return current_player
 end
  def turn_count(board)
   turncounter = 0
-  board.each do |space|
-    if space == "X" || space == "O"
+  board.each do |index|
+    if index == "X" || index == "O"
       turncounter +=1
   end
 end
