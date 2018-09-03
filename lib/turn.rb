@@ -55,5 +55,5 @@ end
       turncounter +=1
   end
 end
-return counter
+return turncounter
 end
