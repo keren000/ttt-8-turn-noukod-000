@@ -48,12 +48,13 @@ end
 end
 return current_player
 end
- def turn_count(board)
-  turncounter = 0
-  board.each do |space|
-    if space == "X" || space == "O"
-      turncounter +=1
+
+def turn_count
+  turn = 0
+  board.each do |index|
+    if index == "X" || index == "O"
+      turn += 1
+    end
   end
-end
-return turncounter
+  return turn
 end
