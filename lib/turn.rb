@@ -31,7 +31,7 @@ def move(board, index, token = "X")
 
    #check for validation
   if valid_move?(board,index)
-    puts "valid move"
+    puts "Valid move"
     move(board, index, token)
     display_board(board)
    else
