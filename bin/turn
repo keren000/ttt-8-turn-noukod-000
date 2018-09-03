@@ -9,4 +9,5 @@ move(board, 4, "X")
 move(board, 0, "0")
 
 display_board
+
 turn(board)
