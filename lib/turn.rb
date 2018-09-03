@@ -40,13 +40,14 @@ def move(board, index, token = "X")
   end
   display_board(board)
 end
- def current_player(board)
-  if turn_count(board)%2 ==0
-    current_player = "X"
-  else
-    current_player = "O"
-end
-return current_player
+def current_player
+  num_turns = turn_count
+ if num_turns % 2 == 0
+   player = "X"
+ else
+   player = "O"
+ end
+ return player
 end
 
 def turn_count
